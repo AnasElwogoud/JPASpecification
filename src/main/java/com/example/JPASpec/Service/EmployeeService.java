@@ -131,6 +131,7 @@ public class EmployeeService {
         workbook.write(stream);
         workbook.close();
         stopWatch.stop();
+        System.out.println("Done");
         logger.info("{}, Time: {}s", Thread.currentThread().getName(), stopWatch.getTotalTimeSeconds());
     }
 
